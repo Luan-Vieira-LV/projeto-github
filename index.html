@@ -1,13 +1,271 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Workshop Github</title>
-</head>
-<body>
-    
-    <h2>Workshop - Github COTI Informática</h2>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Landing page moderna explicando os principais conceitos de GitHub: repositórios, branches, commits, pull requests e colaboração em equipe."
+    />
+    <title>GitHub para Devs</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <a href="#top" class="brand" aria-label="Início do GitHub para Devs">
+          <span class="brand-mark"></span>
+          <span>GitHub para Devs</span>
+        </a>
 
-</body>
+        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+          ☰
+        </button>
+
+        <nav class="menu" aria-label="Menu principal">
+          <a href="#concepts">Conceitos</a>
+          <a href="#workflow">Fluxo</a>
+          <a href="#benefits">Vantagens</a>
+          <a href="#start">Começar</a>
+        </nav>
+
+        <a href="#start" class="button primary header-cta">Começar agora</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <span class="eyebrow">Controle de versão</span>
+            <h1>GitHub: a base da colaboração em projetos de software.</h1>
+            <p>
+              O GitHub é uma plataforma que reúne Git, trabalho em equipe,
+              versionamento e publicação de código em um só lugar. Ele permite
+              guardar projetos, acompanhar mudanças, revisar ideias e entregar
+              software com mais segurança e organização.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#concepts" class="button primary">Explorar conceitos</a>
+              <a href="#workflow" class="button secondary">Ver fluxo</a>
+            </div>
+
+            <div class="stats" aria-label="Estatísticas do GitHub">
+              <div class="stat">
+                <strong>1B+</strong>
+                <span>Commits</span>
+              </div>
+              <div class="stat">
+                <strong>100M+</strong>
+                <span>Projetos</span>
+              </div>
+              <div class="stat">
+                <strong>85M+</strong>
+                <span>Desenvolvedores</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-label="Visualização do terminal GitHub">
+            <div class="terminal">
+              <div class="terminal-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="terminal-body">
+                <span class="command">git clone</span>
+                <span class="code-line">https://github.com/time/projeto.git</span>
+                <span class="command">git checkout</span>
+                <span class="code-line">-b feature/nova-funcionalidade</span>
+                <span class="command">git commit</span>
+                <span class="code-line">-m <span class="comment">"Adiciona dashboard inicial"</span></span>
+                <span class="command">git push</span>
+                <span class="code-line">origin feature/nova-funcionalidade</span>
+              </div>
+            </div>
+            <div class="badge">Colaboração em cada etapa</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="concepts">
+        <div class="container">
+          <div class="section-header">
+            <span class="eyebrow">Principais conceitos</span>
+            <h2>Entenda o que move o GitHub</h2>
+            <p>
+              A plataforma é organizada em blocos que ajudam profissionais a
+              manter código, revisão e histórico em ordem, mesmo em times grandes.
+            </p>
+          </div>
+
+          <div class="cards-grid">
+            <article class="concept-card">
+              <div class="icon-box">R</div>
+              <h3>Repositório</h3>
+              <p>
+                É o espaço central do projeto, onde ficam todos os arquivos,
+                histórico de alterações e documentação. Pense nele como a pasta
+                principal do seu trabalho.
+              </p>
+            </article>
+
+            <article class="concept-card">
+              <div class="icon-box">B</div>
+              <h3>Branches</h3>
+              <p>
+                As branches permitem criar linhas paralelas de desenvolvimento.
+                Assim, você pode testar novas ideias sem afetar diretamente o
+                código principal.
+              </p>
+            </article>
+
+            <article class="concept-card">
+              <div class="icon-box">C</div>
+              <h3>Commits</h3>
+              <p>
+                Cada commit registra uma alteração com uma mensagem descritiva.
+                Isso cria um histórico claro do que foi feito e quando foi feito.
+              </p>
+            </article>
+
+            <article class="concept-card">
+              <div class="icon-box">P</div>
+              <h3>Pull Request</h3>
+              <p>
+                É a etapa de revisão e aprovação de mudanças antes de integrar no
+                projeto principal. Ajuda a manter a qualidade e a segurança do código.
+              </p>
+            </article>
+
+            <article class="concept-card">
+              <div class="icon-box">I</div>
+              <h3>Issues</h3>
+              <p>
+                São tarefas, falhas, melhorias ou pendências do projeto. Elas
+                servem como backlog organizando o trabalho e mantendo a equipe alinhada.
+              </p>
+            </article>
+
+            <article class="concept-card">
+              <div class="icon-box">M</div>
+              <h3>Merge</h3>
+              <p>
+                O merge integra as alterações aprovadas na branch principal. É o
+                momento em que o trabalho individual se transforma em progresso do projeto.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="workflow">
+        <div class="container">
+          <div class="section-header">
+            <span class="eyebrow">Fluxo de trabalho</span>
+            <h2>Como uma equipe usa o GitHub no dia a dia</h2>
+          </div>
+
+          <div class="timeline">
+            <article class="step-card">
+              <div class="step-number">1</div>
+              <h3>Criar</h3>
+              <p>Um time inicia um repositório e organiza arquivos, documentação e regras de uso.</p>
+            </article>
+
+            <article class="step-card">
+              <div class="step-number">2</div>
+              <h3>Desenvolver</h3>
+              <p>Cada pessoa trabalha em branches separadas para implementar tarefas específicas.</p>
+            </article>
+
+            <article class="step-card">
+              <div class="step-number">3</div>
+              <h3>Revisar</h3>
+              <p>Pull requests permitem comentar, testar e validar alterações antes do merge final.</p>
+            </article>
+
+            <article class="step-card">
+              <div class="step-number">4</div>
+              <h3>Lançar</h3>
+              <p>Quando tudo está validado, as mudanças entram na branch principal e o projeto avança.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="benefits">
+        <div class="container">
+          <div class="section-header">
+            <span class="eyebrow">Vantagens</span>
+            <h2>Por que ele é tão importante?</h2>
+          </div>
+
+          <div class="benefits-grid">
+            <article class="benefit-card">
+              <div class="feature-row">
+                <div class="icon-box">✓</div>
+                <div>
+                  <h3>Histórico completo</h3>
+                  <p>Você consegue acompanhar cada mudança e voltar para versões anteriores quando necessário.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="benefit-card">
+              <div class="feature-row">
+                <div class="icon-box">⚡</div>
+                <div>
+                  <h3>Colaboração eficiente</h3>
+                  <p>Times podem trabalhar em paralelo sem sobrescrever o trabalho uns dos outros.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="benefit-card">
+              <div class="feature-row">
+                <div class="icon-box">🛡</div>
+                <div>
+                  <h3>Segurança e revisão</h3>
+                  <p>Mensagens, comentários e aprovação de código reduzem erros e aumentam a confiança.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="benefit-card">
+              <div class="feature-row">
+                <div class="icon-box">🌐</div>
+                <div>
+                  <h3>Compartilhamento e visibilidade</h3>
+                  <p>Projetos ficam acessíveis para a comunidade, clientes, mentores e colegas de time.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta" id="start">
+        <div class="container">
+          <div class="cta-box">
+            <div>
+              <h3>Pronto para começar no GitHub?</h3>
+              <p>Crie um repositório, faça commits, abra pull requests e colabore com sua equipe.</p>
+            </div>
+            <a href="#top" class="button primary">Voltar ao topo</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        © <span id="year"></span> GitHub para Devs • Aprenda, colabore e evolua.
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
